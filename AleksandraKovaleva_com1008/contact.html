@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Aleksandra Kovaleva</title>
+        
+        <meta name="author" content="Aleksandra Kovaleva">
+        <meta name="description" content="Personal Website">
+        <meta name="keywords" content="Aleksandra Kovaleva, contact information">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1 id="top">Aleksandra Kovaleva</h1>
+            </header> 
+            <nav>
+                <ul>
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="degree.html">My Degree</a></li>
+                    <li><a href="canvas.html">Canvas</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        
+            <main>
+                <div id="container">
+                    <h1>Send me an email </h1>
+                    <p id="contact-paragraph">
+                        If you have got any questions or just want to contact me - 
+                        please do not hesitate to send me an email.
+                    </p>
+
+                    <div class="contact-cols-flex">
+        
+                        <div class="contact-column titles">
+                            <h3 class="contact-info para-title">E-mail</h3>
+                            <h3 class="contact-info para-address">Address</h3>
+                        </div>
+                        <div class="contact-column information">
+                            <p class="contact-info para-myemail">akovaleva1@sheffield.ac.uk</p>
+                            <p class="contact-info para-myaddress"> Department of Computer Science<br>The University of Sheffield<br>
+                                Regent Court, 211 Portobello<br>Sheffield, S1 4DP</p>
+                        </div>
+                    </div>
+
+                    <form id="contact-form" name="contactform"
+                      action="https://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.php" 
+                      method="POST">
+
+                        <input class="contact-form" type="hidden" name="recipients" 
+                            value="akovaleva1@sheffield.ac.uk">
+
+                        <p>
+                        <label class="contact-form" for="from">Your Name</label>
+                        <input class="contact-form" type="text" id="from" name="from"
+                            placeholder="Name" maxlength="40" size="20" required>
+                        </p> 
+    
+                        <p>
+                        <label class="contact-form" for="email">E-mail</label>
+                        <input class="contact-form" type="email" id="email" name="email" 
+                            placeholder="Email address" maxlength="40" size="20" required>
+                        </p>
+    
+                        <p>
+                        <label class="contact-form" for="message">Your Message</label>
+                        <textarea class="contact-form" id="message" name="message" 
+                            placeholder="Leave a message" required></textarea>
+                        </p>
+    
+                        <p>
+                        <input class="contact-form" type="submit" name="submit" 
+                            id="send-button" value="Send">
+                        </p>
+                                
+                            
+                    </form>
+    
+                        
+
+                </div>
+                              
+            </main>
+
+            <footer>
+                <div class="footer box">
+                    <ul class="footer">
+                        <li class="footer"><a class="footer" href="quiz.html">Quiz</a></li>
+                        <li class="footer"><a class="footer" href="accessibility.html">Accessibility</a></li> 
+                    </ul>
+                  </div> 
+                  <p id="footer-p">&copy; Aleksandra Kovaleva, 2020</p>
+            </footer>
+              
+        </div>
+    </body>
+</html>

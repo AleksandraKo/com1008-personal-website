@@ -1,0 +1,490 @@
+/* ~~~CSS stylesheet for Aleksandra Kovaleva's website~~~~~~~~~~~~ */
+/* ~~~general tags~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+html {
+    font-family: 'Menlo',sans-serif;  /* font-family of the whole webswite*/
+}
+
+a {
+    text-decoration: none;  /*all of the links will be balck and have no underline*/
+    color: rgb(0,0,0);
+}
+  
+#wrapper {
+    width: 100%;
+    background-color: rgb(235,245,255);   
+}
+
+/* the name inside the header element */
+#top {
+    font-size: 2.5rem;
+    color: rgb(41, 40, 40);
+    font-family: sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url(../images/background-scribbles.png); /* an image to fill the space around wrapper */
+}
+
+p {
+    font-size: 1rem; /* keeping a constant size and line-height */
+    line-height: 1.3rem;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~navigation~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;  /* prevents the navbar from collapsing with child elements */
+    background-color: rgb(252,137,164);
+    width: 100%;
+}
+
+nav li a {
+    float: left;
+    display: block;
+    font-size: 1.2rem;
+    color: rgb(24, 24, 24);
+    text-align: center;
+    padding: 30px 16px;
+}
+   
+nav a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(41,40,40);
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~main content/index.html~~~~~~~~~~~~~~~~~~~~~ */
+
+div.container {  /* container to pad out the content and centralise it even more */
+    width: 97%;
+    padding-top: 2%;
+    margin: auto;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+/* ~~~main page image~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#image-of-me {
+    width: 40%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+/* ~~~other images~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+img.small-images {
+    margin-left: 10%;
+    padding: 1rem 0;
+    width: 80%;
+}
+
+
+/* ~~~paragraph boxes~~~~~~~~~~~~~~~~~~~~~~~~~ */
+p.boxes {
+    margin: auto;
+    padding: 0.2rem;
+    color: rgb(0,0,0);
+}
+
+.green {
+    background-color: rgb(202,231,193);
+}
+
+.yellow {
+    background-color: rgb(253,253,150);
+}
+
+.pink {
+    background-color: rgb(255,147,172);
+}
+
+
+/* ~~~grapchore logo image~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#graphcore-logo {
+    float: left;
+    margin-left: -1%;
+    margin-right: 1%;
+}
+
+/* ~~~go to quiz button on my degree page~~~~~~~~~~~~ */
+#go-to.quiz-button {
+    width: 100%;
+    border: none; 
+    outline-style: solid;
+    outline-width: 0.1rem;
+    outline-color: rgb(155, 44, 70);
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1rem;
+    background-color: rgb(252,137,164);
+}
+
+#go-to.quiz-button:hover {
+    background-color: rgb(241, 50, 95);
+}
+
+#go-to.quiz-button:focus { /* used for keyboard accessibility purpose */
+    outline: none;
+}
+
+#go-to.quiz-button:focus-visible {
+    outline: 3px solid rgb(0,0,0); /* will make it visible when user uses tab */
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~canvas page~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+/* table css */
+.data-table {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    table-layout: auto;
+    padding: 0.3rem;
+    width: 95%;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.301); /*inset here is used to be supported by all browsers */
+    background-color: rgba(202, 231, 193, 0.815);
+    text-align: center;
+}
+
+#canvas { 
+    margin: auto;
+    width: 350px;
+    height: auto;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+.canvas-button { 
+    outline: none;
+    padding: 0.3rem 0.5rem;
+    margin: 0 0.3rem 0.3rem 0;
+    border-radius: 2rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(240, 110, 140);
+    text-align: center;
+}
+
+div.graph-buttons, div.colour-buttons { 
+    margin-left: 5%; 
+}
+
+
+.canvas-button:hover{
+    color: white;
+    background-color:rgb(112, 15, 39);
+}
+
+.canvas-button:focus { /* used for keyboard accessibility purpose */
+    outline: none;
+}
+
+.canvas-button:focus-visible {
+    outline: 3px solid rgb(0,0,0); /* will make it visible when user uses tab */
+}
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~quiz page css ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+main.quiz {
+    margin-left: 5%;
+}
+
+.quiz-headings {
+    margin: 0;
+    font-weight: bold;
+}
+
+h1.quiz-headings {
+    text-align: center;
+    padding: 2%;
+}
+
+h3.quiz-headings {
+    font-size: 1.5rem;
+}
+
+.quiz-images {
+    padding: 1.5rem 0 1rem;
+    width: 90%;
+}
+
+
+/* ~~~quiz~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.quiz-answer-box {
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0 0.5px rgb(67, 90, 61); 
+    text-align: left;
+    font-family: 'Menlo';
+    font-size: 1.2rem;
+    display: block;
+    width: 70%;
+    padding: 2%;
+    background-color: rgb(162, 226, 142);
+    outline: none;
+}
+
+.quiz-answer-box:hover {
+    background-color: rgb(241, 99, 132);
+}
+
+.quiz-answer-box:focus-visible {
+    outline: 3px solid rgb(0,0,0); /* will make it visible when user uses tab */
+}
+
+/* the span elements that are invisible until clicked */
+.hidden-answers {
+    display: none;
+}
+
+.button-one, .button-two, .button-three, .button-four {
+    margin-top: 1rem;  /* adding margin, so that it is easier to click on the buttons */
+}
+
+.quiz {
+    padding-bottom: 0.5rem;
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~contact~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#container { 
+    margin-left: 1%; 
+} 
+
+/* info table laid out using divs to avoid reading and */
+/* navigation order issues for screen reader users  */
+#contact-paragraph {
+    font-size: 1.2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.contact-cols-flex {
+    display: flex;
+}
+
+.contact-column.titles {
+    width: 20%;
+}
+
+.contact-column.titles h3 {
+    font-weight: bold;
+}
+
+.contact-column.information {
+    width: 70%;
+}
+
+.contact-info {
+    padding: 0.5rem 0;
+}
+
+p.contact-info {
+    line-height: 1.5rem;
+}
+
+
+/* ~~~ contact-form ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#contact-form {
+    padding: 1rem 0;
+    max-width: 90%;
+}
+   
+input.contact-form, textarea.contact-form {
+    border: none; 
+    outline-style: solid;
+    outline-width: 0.1rem;
+    outline-color: rgb(168, 195, 207);
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    margin: 0.6rem 0;
+    font-family: 'Merriweather', sans-serif;
+    resize: vertical;
+}
+
+label.contact-form {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#send-button {
+    width: 111%;
+    text-align: center;
+    font-size: 1rem;
+    outline-color: rgb(241, 50, 95);
+    background-color: rgb(252,137,164);
+}
+
+#send-button:hover {
+    background-color: rgb(241, 50, 95);
+}
+
+#send-button:focus { /* used for keyboard accessibility purpose */
+    outline: none;
+}
+
+#send-button:focus-visible {
+    outline: 3px solid rgb(0,0,0); /* will make it visible when user uses tab */
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~accessibility page~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+p.accessibility {
+    margin: 1.5rem 0;
+}
+
+ul.accessibility {
+    margin-left: 2%;
+    line-height: 1.3rem;
+    font-size: 1rem;
+    list-style-type: circle;
+    list-style-position: inside ;
+}
+
+#wave-pic {
+    display: none;
+    width: 90%;
+    margin: auto;
+}
+
+#lighthouse-pic {
+    width: 90%;
+    margin: auto;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+ul.footer {
+    display: inline-grid;  /* using a css grid to place the link in the footer */
+    grid-auto-flow: row;
+    grid-gap: 1rem;
+    justify-items: center;
+    margin: auto;
+}
+
+a.footer {
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(226, 69%, 54%, 0.548);
+}
+  
+a:hover.footer {
+    box-shadow: inset 0 -1.2em 0 hsla(236, 76%, 46%, 0.4);
+}
+
+div.footer {
+    margin-top: 2rem;
+    display: flex;
+    padding: 1.5rem 0;
+    width: 100%;
+    background-color: rgb(149, 197, 241);
+    font-family: 'Menlo', monospace;
+}
+
+#footer-p {
+    font-size: 0.6rem;
+}
+  
+/* adapting content to the desktop version */
+@media only screen and (min-width: 768px) {
+    #top { font-size: 5rem; }
+    #wrapper { width: 80%; margin: 0 auto; }
+    div.container { width: 90%; }
+    nav { position: sticky; top: 0; }  /* making a sticky nav bar and moving it up to the sop once scrolled */
+    nav li a { font-size: 1.5rem; }
+    img.small-images { margin-left: 0; width: 30%; }
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.5rem; }
+    p { line-height: 2rem; font-size: 1.5rem; }  
+    p.boxes { font-size: 2rem; padding: 1.5rem; margin-left: 0; }
+    p.boxes:hover { transform: scale(1.1); }
+
+    /* ~~~graphcore link in degree.html~~~~~~~~~~~~~~~~~~ */
+    #graphcore a { font-size: 2rem; font-weight: bold; }  /* the word gets bigger as you hover over it*/
+    #graphcore a:hover { transition: all 400ms; font-size: 2.5rem; }
+
+
+    /* ~~~laying the quiz out as columns~~~~~~~~~~~~~~~~~~~~~~~*/
+    .quiz-answer-box { width: 90%; }
+    .quiz-column { width: 35%; }
+    .quiz-cols-flex { display: flex; }
+    .button-one, .button-two { margin-right: 1.5rem; }
+    .quiz-images { width: 60%; }
+
+
+    /* ~~~canvas page~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    .data-table { width: 65%; table-layout: fixed; margin: 2rem auto 2rem; }
+    .data-table th, .data-table td { padding: 0.5rem; }
+    #canvas { width: 560px; height: 500px; margin-left: 20%; }
+    .canvas-button { padding: 0.3rem 1.2rem; }
+    div.graph-buttons, div.colour-buttons { margin-left: 28%; }
+
+
+    /* ~~~contact-form~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/ 
+    #container { margin-left: 25%; } 
+    #contact-paragraph { width: 65%; }
+    p.contact-info { font-size: 1.2rem; }
+    .contact-column.information { width: 30%;}
+    #contact-form { padding: 2rem 0; max-width: 60%; }  
+    #send-button { width: 106%;}
+
+
+
+    /* ~~~accessibility page~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    p.accessibility {margin: 2rem 0; }
+    #wave-pic { display: inline-flex; float: right; width: 30%; } /* putting the picture to the right of the text */
+    #lighthouse-pic {  margin-left: 10%; width: 40%; }
+    ul.accessibility { line-height: 2rem; font-size: 1.5rem;}
+    .W3-link { font-weight: bold; font-size: 1.5rem; }
+    .W3-link a:hover { transition: all 400ms; font-size: 2rem; }
+
+
+    /* ~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    div.footer { padding: 3rem 0; }
+    ul.footer { grid-auto-flow: column; grid-gap: 3rem; }
+    a.footer {font-size: 1.5rem;}
+
+}
+/* ~~~end~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Aleksandra Kovaleva</title>
+        
+        <meta name="author" content="Aleksandra Kovaleva">
+        <meta name="description" content="Personal Website">
+        <meta name="keywords" content="Aleksandra Kovaleva, data visuliasation, canvas">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1 id="top">Aleksandra Kovaleva</h1>
+            </header> 
+            <nav>
+                <ul>
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="degree.html">My Degree</a></li>
+                    <li><a href="canvas.html">Canvas</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        
+            <main>
+                <div class="container">
+                    <h1>Data Visualisation</h1>
+
+                    <p class="canvas-page">
+                        For a week I have tracked how long I spend doing uni work, 
+                        being on my phone or exercising every day.<br> I have organised the data in a table below 
+                        and used canvas to represent it using three different types of graphs: bar chart, 
+                        pie chart and a line graph <br> You can switch between the graphs by using the buttons underneath 
+                        the canvas. You can also choose the colour scheme of the data using buttons on the
+                        right side. 
+                    </p>
+                    <!-- data table of the time spent each day on activities -->
+                    <table class="data-table">
+                        <thead>
+                            <tr class="data-table">
+                                <td class="data-table" rowspan="2"></td>
+                                <th class="data-table" colspan="7" scope="colgroup">DAYS</th>
+                            </tr>
+                            <tr class="data-table">
+                                <th class="data-table">MON</th>
+                                <th class="data-table">TUE</th>
+                                <th class="data-table">WED</th>
+                                <th class="data-table">THUR</th>
+                                <th class="data-table">FRI</th>
+                                <th class="data-table">SAT</th>
+                                <th class="data-table">SUN</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="data-table">
+                                <th class="data-table title">uni</th>
+                                <td class="data-table">5</td>
+                                <td class="data-table">6</td>
+                                <td class="data-table">8</td>
+                                <td class="data-table">10</td>
+                                <td class="data-table">8</td>
+                                <td class="data-table">5</td>
+                                <td class="data-table">6</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="data-table">
+                                <th class="data-table title">gym</th>
+                                <td class="data-table">2</td>
+                                <td class="data-table">0</td>
+                                <td class="data-table">1</td>
+                                <td class="data-table">1</td>
+                                <td class="data-table">0</td>
+                                <td class="data-table">1</td>
+                                <td class="data-table">1</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="data-table">
+                                <th class="data-table title">phone</th>
+                                <td class="data-table">3</td>
+                                <td class="data-table">2</td>
+                                <td class="data-table">2</td>
+                                <td class="data-table">1</td>
+                                <td class="data-table">3</td>
+                                <td class="data-table">2</td>
+                                <td class="data-table">5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="graph-buttons">
+                        <input class="canvas-button type" type="button" value="Bar Chart" id="barChart"/>
+                        <input class="canvas-button type" type="button" value="Pie Chart" id="pieChart"/>
+                        <input class="canvas-button type" type="button" value="Line Graph" id="lineGraph"/>
+                    </div>
+                    <canvas id="canvas" width="560" height="500">Sorry! Looks like the canvas element is not supported by your browser!</canvas>
+                    <div class="colour-buttons">
+                        <input class="canvas-button colour" type="button" value="colour #1" id="colour1"/>
+                        <input class="canvas-button colour" type="button" value="colour #2" id="colour2"/>
+                        <input class="canvas-button colour" type="button" value="colour #3" id="colour3"/>
+                    </div>
+                    
+                </div>
+                    
+        
+            </main>
+
+            <footer>
+                <div class="footer box">
+                    <ul class="footer">
+                        <li class="footer"><a class="footer" href="quiz.html">Quiz</a></li>
+                        <li class="footer"><a class="footer" href="accessibility.html">Accessibility</a></li>  
+                    </ul>
+                </div> 
+                <p id="footer-p">&copy; Aleksandra Kovaleva, 2020</p>
+            </footer>
+        </div>
+        <script src="./js/canvas.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>UoS Quiz</title>
+        
+        <meta name="author" content="Aleksandra Kovaleva">
+        <meta name="description" content="Personal Website">
+        <meta name="keywords" content="University of Sheffield, quiz">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    
+    <body>
+        <div class="container-grid">
+            <div id="wrapper">
+                <header>
+                    <h1 id="top">Aleksandra Kovaleva</h1>
+                </header> 
+                <nav>
+                    <ul>
+                        <li><a href="index.html">About Me</a></li>
+                        <li><a href="degree.html">My Degree</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+    
+                <main class="quiz">
+                    <h1 class="quiz-headings">How well do you know The University of Sheffield</h1>
+                    <h2 class="quiz-headings">Take a short quiz</h2>
+    
+                    <img class="quiz-images" src="./images/diamond.jpg" alt="Picture of a university building">
+                        <h3 class="quiz-headings"> What University building is this? </h3>
+                        
+                        <!-- laying out quiz buttons in a table format -->
+                        <div class="quiz-cols-flex">
+    
+                            <div class="quiz-column">
+                                <button class="quiz-answer-box button-one" id="Q2-A">A) Arts Tower</button>
+                                <!-- the spans are hidden until the user clicks on the button to reveal the answer -->
+                                <span class="hidden-answers" id="Answer2-1">Wrong Answer, sorry</span>   
+    
+                                <button class="quiz-answer-box button-two" id="Q2-B">B) Western Bank Library</button>
+                                <span class="hidden-answers" id="Answer2-2">Not quite</span>
+                            </div>
+    
+                            <div class="quiz-column">
+                                <button class="quiz-answer-box button-three" id="Q2-C">C) Richard Roberts Building</button>
+                                <span class="hidden-answers" id="Answer2-3">Wrong Answer, try again</span>
+    
+                                <button class="quiz-answer-box button-four" id="Q2-D">D) The Diamond</button>
+                                <span class="hidden-answers" id="Answer2-4">Yes! Well done!</span>
+                            </div>
+    
+                        </div>
+
+    
+                    <img class="quiz-images" src="./images/sirfrederick.jpg" alt="Picture of a university roof">
+                    <h3 class="quiz-headings"> Which university building does this belong to? </h3>
+
+                    <div class="quiz-cols-flex">
+
+                        <div class="quiz-column">
+                            <button class="quiz-answer-box button-one" id="Q-A">A) Hicks Building</button>
+                            <span class="hidden-answers" id="Answer-1">Wrong Answer, sorry</span>   
+
+                            <button class="quiz-answer-box button-two" id="Q-B">B) Students Union</button>
+                            <span class="hidden-answers" id="Answer-2">Not quite</span>
+                        </div>
+
+                        <div class="quiz-column">
+                            <button class="quiz-answer-box button-three" id="Q-C">C) Sir Frederick Mappin </button>
+                            <span class="hidden-answers" id="Answer-3">Yes! Well done!</span>
+
+                            <button class="quiz-answer-box button-four" id="Q-D">D) Richard Roberts Building</button>
+                            <span class="hidden-answers" id="Answer-4">Wrong Answer, try again</span>
+                        </div>
+
+                    </div>
+    
+                    <img class="quiz-images" src="./images/regents.jpg" alt="Picture of a building for a quiz">
+
+                    <h3 class="quiz-headings"> What University building is this? </h3>
+                    <div class="quiz-cols-flex">
+
+                        <div class="quiz-column">
+                            <button class="quiz-answer-box button-one" id="Q3-A">A) Regents Court</button>
+                            <span class="hidden-answers" id="Answer3-1">Yes! Well done!</span>   
+
+                            <button class="quiz-answer-box button-two" id="Q3-B">B) Alfred Denny Building</button>
+                            <span class="hidden-answers" id="Answer3-2">Not quite</span>
+                        </div>
+
+                        <div class="quiz-column">
+                            <button class="quiz-answer-box button-three" id="Q3-C">C) Octagon Centre</button>
+                            <span class="hidden-answers" id="Answer3-3">Wrong Answer, try again</span>
+
+                            <button class="quiz-answer-box button-four" id="Q3-D">D) Hicks Building</button>
+                            <span class="hidden-answers" id="Answer3-4">Wrong Answer, sorry</span>
+                        </div>
+                    </div>
+
+                </main>
+    
+                <footer>
+                    <div class="footer box">
+                        <ul class="footer">
+                            <li class="footer"><a class="footer" href="accessibility.html">Accessibility</a></li>
+                            <li class="footer"><a class="footer" href="quiz.html">Quiz</a></li>
+                        </ul>
+                    </div> 
+                    <p id="footer-p">&copy; Aleksandra Kovaleva, 2020</p>
+                </footer>
+            </div>
+        
+
+            
+        </div>
+        <script src="./js/QuizAnswers.js"></script>
+    </body>
+</html>
